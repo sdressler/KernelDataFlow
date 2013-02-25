@@ -1,0 +1,8 @@
+LLVM_ROOT = /opt/llvm/3.2
+LLVM_CONFIG = $(LLVM_ROOT)/bin/llvm-config
+
+CXX = $(LLVM_ROOT)/bin/clang++
+AR = ar
+
+CXXFLAGS = -O0 -g -fPIC --std=c++11 -Wall -I$(ROOT)/include `$(LLVM_CONFIG) --cxxflags` -fno-exceptions
+LDFLAGS = -shared `$(LLVM_CONFIG) --ldflags` 
