@@ -1,4 +1,4 @@
-LLVM_ROOT = /opt/llvm/3.2
+LLVM_ROOT = /home/marcusmae/forge/llvm/build/install
 LLVM_CONFIG = $(LLVM_ROOT)/bin/llvm-config
 
 CXX = $(LLVM_ROOT)/bin/clang++

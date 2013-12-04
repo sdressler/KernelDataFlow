@@ -2,9 +2,9 @@
 #define KERNEL_DATA_FLOW_H
 
 #include <llvm/Pass.h>
-#include <llvm/Module.h>
-#include <llvm/Type.h>
-#include <llvm/Constants.h>
+#include <llvm/IR/Module.h>
+#include <llvm/IR/Type.h>
+#include <llvm/IR/Constants.h>
 
 #include <set>
 #include <map>
