@@ -7,6 +7,7 @@
 
 #include <KernelDataFlow/BlockProcessor/BlockProcessor.h>
 
+#include <llvm/IR/Constants.h>
 #include <llvm/Support/raw_ostream.h>
 #include <sstream>
 

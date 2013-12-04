@@ -1,7 +1,7 @@
 #ifndef GRAPH_PROPERTIES_H
 #define GRAPH_PROPERTIES_H
 
-#include <llvm/BasicBlock.h>
+#include <llvm/IR/BasicBlock.h>
 
 #include <string>
 #include <memory>

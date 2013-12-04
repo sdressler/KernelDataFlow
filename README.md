@@ -33,7 +33,11 @@ You can input C or C++ code where the kernel function is annotated. Annotation
 is done by setting `__attribute__((annotate("kernel")))` right before the kernel
 function, i.e. its declaration or definition. Once the kernel function was
 processed, a graph is generated which currently is written to disk as Graphviz
-file. This file can then be further processed, e.g. to create a visualization.
+file. This file can then be further processed, e.g. to create a visualization,
+for example:
+
+`$ clang -emit-llvm -S -c example/loop.c -o - | opt -load ./KernelDataFlow.so -KernelDataFlow && dot -Tpdf graph.dot -o graph.pdf`
+
 Furthermore, block-related graphs can be found within the `graphs` directory.
 The pass is yet extendable to also use the in-memory graph. To do so, simply
 create a new folder inside the `src` directory, copy the Makefile of one of
